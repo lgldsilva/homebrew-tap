@@ -5,21 +5,21 @@
 class Updash < Formula
   desc "System Update Dashboard — one binary for package updates, AI tools, and smart cleanup"
   homepage "https://github.com/lgldsilva/updash"
-  version "0.12.7"
+  version "0.12.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lgldsilva/updash/releases/download/v0.12.7/updash_0.12.7_darwin_amd64.tar.gz"
-      sha256 "0b1c4e14dd65c4f582caf69ca3f995f30cf0901cfbb7879bc5b944836f2d6a96"
+      url "https://github.com/lgldsilva/updash/releases/download/v0.12.8/updash_0.12.8_darwin_amd64.tar.gz"
+      sha256 "e7cd3d411542bf0c14bda5d242a1a86e0b679e9fe757ff9c8fcbcef72cda6677"
 
       def install
         bin.install "updash"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lgldsilva/updash/releases/download/v0.12.7/updash_0.12.7_darwin_arm64.tar.gz"
-      sha256 "3c5e1d73d5b5efbc14010a69163b529732e6806b559dd015df2ae6541be4601b"
+      url "https://github.com/lgldsilva/updash/releases/download/v0.12.8/updash_0.12.8_darwin_arm64.tar.gz"
+      sha256 "12ddeed7032c41a911616391a636613309501a60baea7a19a9b35e3b9f4821be"
 
       def install
         bin.install "updash"
@@ -29,15 +29,15 @@ class Updash < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lgldsilva/updash/releases/download/v0.12.7/updash_0.12.7_linux_amd64.tar.gz"
-      sha256 "f7989ac3e8e076163f3e869fd6d9be62e7deccebd5cc9f1115a21252c191a905"
+      url "https://github.com/lgldsilva/updash/releases/download/v0.12.8/updash_0.12.8_linux_amd64.tar.gz"
+      sha256 "1792ef4f1c1670b65fd6e2b876464a7fcca159f902271fa228caf719245b71be"
       def install
         bin.install "updash"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lgldsilva/updash/releases/download/v0.12.7/updash_0.12.7_linux_arm64.tar.gz"
-      sha256 "32bf9f66cf7f54828725f77251e6e554e6716a59135e93adf377ceae159b6495"
+      url "https://github.com/lgldsilva/updash/releases/download/v0.12.8/updash_0.12.8_linux_arm64.tar.gz"
+      sha256 "d34a4c85ed7f7d7f539ed419cb3a5eb7915cc20faa863aa7c9c093ed64e18851"
       def install
         bin.install "updash"
       end
